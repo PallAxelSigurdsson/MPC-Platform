@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri May 28 02:19:22 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : Core6
+Top-level Entity Name : Core6
+Family : Cyclone IV E
+Total logic elements : 34,401
+    Total combinational functions : 30,326
+    Dedicated logic registers : 18,004
+Total registers : 18004
+Total pins : 46
+Total virtual pins : 0
+Total memory bits : 2,180,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

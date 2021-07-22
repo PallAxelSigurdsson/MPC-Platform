@@ -1,0 +1,88 @@
+Info (10281): Verilog HDL Declaration information at Core7_id_router_194.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_194.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_192.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_192.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_164.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_164.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_162.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_162.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_134.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_134.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_132.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_132.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_104.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_104.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_102.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_102.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_074.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_074.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_072.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_072.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_044.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_044.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_042.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_042.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_005.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_005.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_id_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_013.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_013.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_012.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_012.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_011.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_011.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_010.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_010.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_009.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_009.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_008.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_008.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_007.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_007.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_006.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_006.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_005.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_005.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_004.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_004.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_003.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_003.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_001.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at Core7_addr_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_6.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_6.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_6.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_6.v(2553): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_5.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_5.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_5.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_5.v(2553): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_4.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_4.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_4.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_4.v(2553): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_3.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_3.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_3.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_3.v(2553): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_2.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_2.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_2.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_2.v(2553): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_1.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_1.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_1.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_1.v(2553): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_0.v(1567): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_0.v(1569): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_0.v(1725): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at Core7_cpu_0.v(2553): conditional expression evaluates to a constant

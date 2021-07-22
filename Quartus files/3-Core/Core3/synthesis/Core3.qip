@@ -1,0 +1,230 @@
+set_global_assignment -entity "Core3" -library "Core3" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "Core3" -library "Core3" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "Core3" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "Core3" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../Core3.sopcinfo"]
+set_instance_assignment -entity "Core3" -library "Core3" -name SLD_INFO "QSYS_NAME Core3 HAS_SOPCINFO 1 GENERATION_ID 1622162239"
+set_global_assignment -library "Core3" -name MISC_FILE [file join $::quartus(qip_path) "../../Core3.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "Core3" -name MISC_FILE [file join $::quartus(qip_path) "../../Core3.qsys"]
+
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "Core3.v"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_irq_mapper.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_rsp_xbar_mux.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_rsp_xbar_demux_002.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_rsp_xbar_demux.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cmd_xbar_mux_005.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cmd_xbar_mux_002.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cmd_xbar_mux.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cmd_xbar_demux.sv"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "Core3" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_042.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_040.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_028.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_026.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_005.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_003.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router_002.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_id_router.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_addr_router_005.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_addr_router_004.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_addr_router_003.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_addr_router_002.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_addr_router_001.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_addr_router.sv"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "Core3" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_performance_counter_0.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_memory_2.hex"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_memory_2.v"]
+set_global_assignment -library "Core3" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2.sdc"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_ociram_default_contents.mif"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_oci_test_bench.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_rf_ram_a.mif"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_rf_ram_b.mif"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_2_test_bench.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_fifo_0_to_1.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_switches.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_green_leds.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_red_leds.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_shared.hex"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_shared.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_mutex_0.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_jtag_uart_0.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_timer_0_0.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_memory_1.hex"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_memory_1.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_memory_0.hex"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_onchip_memory_0.v"]
+set_global_assignment -library "Core3" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1.sdc"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_ociram_default_contents.mif"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_oci_test_bench.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_rf_ram_a.mif"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_rf_ram_b.mif"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_1_test_bench.v"]
+set_global_assignment -library "Core3" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0.sdc"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_ociram_default_contents.mif"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_oci_test_bench.v"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_rf_ram_a.mif"]
+set_global_assignment -library "Core3" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_rf_ram_b.mif"]
+set_global_assignment -library "Core3" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core3_cpu_0_test_bench.v"]
+
+set_global_assignment -entity "Core3_irq_mapper" -library "Core3" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "Core3_irq_mapper" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_irq_mapper" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_rsp_xbar_mux_001" -library "Core3" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core3_rsp_xbar_mux_001" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_rsp_xbar_mux_001" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_rsp_xbar_mux" -library "Core3" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core3_rsp_xbar_mux" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_rsp_xbar_mux" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_rsp_xbar_demux_003" -library "Core3" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core3_rsp_xbar_demux_003" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_rsp_xbar_demux_003" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_rsp_xbar_demux_002" -library "Core3" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core3_rsp_xbar_demux_002" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_rsp_xbar_demux_002" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_rsp_xbar_demux" -library "Core3" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core3_rsp_xbar_demux" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_rsp_xbar_demux" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cmd_xbar_mux_005" -library "Core3" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core3_cmd_xbar_mux_005" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cmd_xbar_mux_005" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cmd_xbar_mux_002" -library "Core3" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core3_cmd_xbar_mux_002" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cmd_xbar_mux_002" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cmd_xbar_mux" -library "Core3" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core3_cmd_xbar_mux" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cmd_xbar_mux" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cmd_xbar_demux_001" -library "Core3" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core3_cmd_xbar_demux_001" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cmd_xbar_demux_001" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cmd_xbar_demux" -library "Core3" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core3_cmd_xbar_demux" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cmd_xbar_demux" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "Core3" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_042" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_042" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_042" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_040" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_040" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_040" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_028" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_028" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_028" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_026" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_026" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_026" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_005" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_005" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_005" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_003" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_003" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_003" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router_002" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router_002" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router_002" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_id_router" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_id_router" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_id_router" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_addr_router_005" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_addr_router_005" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_addr_router_005" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_addr_router_004" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_addr_router_004" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_addr_router_004" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_addr_router_003" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_addr_router_003" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_addr_router_003" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_addr_router_002" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_addr_router_002" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_addr_router_002" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_addr_router_001" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_addr_router_001" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_addr_router_001" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_addr_router" -library "Core3" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core3_addr_router" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_addr_router" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core3" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core3" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core3" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core3" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core3" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_performance_counter_0" -library "Core3" -name IP_TOOL_NAME "altera_avalon_performance_counter"
+set_global_assignment -entity "Core3_performance_counter_0" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_performance_counter_0" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_onchip_memory_2" -library "Core3" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core3_onchip_memory_2" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_onchip_memory_2" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cpu_2" -library "Core3" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core3_cpu_2" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cpu_2" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_fifo_0_to_1" -library "Core3" -name IP_TOOL_NAME "altera_avalon_fifo"
+set_global_assignment -entity "Core3_fifo_0_to_1" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_fifo_0_to_1" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_switches" -library "Core3" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core3_switches" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_switches" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_green_leds" -library "Core3" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core3_green_leds" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_green_leds" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_red_leds" -library "Core3" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core3_red_leds" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_red_leds" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_onchip_shared" -library "Core3" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core3_onchip_shared" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_onchip_shared" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_mutex_0" -library "Core3" -name IP_TOOL_NAME "altera_avalon_mutex"
+set_global_assignment -entity "Core3_mutex_0" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_mutex_0" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_jtag_uart_0" -library "Core3" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "Core3_jtag_uart_0" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_jtag_uart_0" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_timer_0_0" -library "Core3" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "Core3_timer_0_0" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_timer_0_0" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_onchip_memory_1" -library "Core3" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core3_onchip_memory_1" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_onchip_memory_1" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_onchip_memory_0" -library "Core3" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core3_onchip_memory_0" -library "Core3" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core3_onchip_memory_0" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cpu_1" -library "Core3" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core3_cpu_1" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cpu_1" -library "Core3" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core3_cpu_0" -library "Core3" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core3_cpu_0" -library "Core3" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core3_cpu_0" -library "Core3" -name IP_TOOL_ENV "Qsys"

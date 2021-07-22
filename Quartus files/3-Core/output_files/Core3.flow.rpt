@@ -1,0 +1,271 @@
+Flow report for Core3
+Fri May 28 02:41:06 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Fri May 28 02:40:55 2021           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Core3                                           ;
+; Top-level Entity Name              ; Core3                                           ;
+; Family                             ; Cyclone IV E                                    ;
+; Device                             ; EP4CE115F29C7                                   ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 14,049 / 114,480 ( 12 % )                       ;
+;     Total combinational functions  ; 13,482 / 114,480 ( 12 % )                       ;
+;     Dedicated logic registers      ; 7,867 / 114,480 ( 7 % )                         ;
+; Total registers                    ; 7867                                            ;
+; Total pins                         ; 46 / 529 ( 9 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 1,347,584 / 3,981,312 ( 34 % )                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/28/2021 02:38:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Core3               ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                             ;
++-------------------------------------+---------------------------------------------------------+---------------+---------------------------------+------------+
+; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name                     ; Section Id ;
++-------------------------------------+---------------------------------------------------------+---------------+---------------------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 247207016683614.162216229903792                         ; --            ; --                              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; --                              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_addr_router               ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_addr_router_001           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_addr_router_002           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_addr_router_003           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_addr_router_004           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_addr_router_005           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cmd_xbar_demux            ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cmd_xbar_demux_001        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cmd_xbar_mux              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cmd_xbar_mux_002          ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cmd_xbar_mux_005          ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cpu_0                     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cpu_1                     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_cpu_2                     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_fifo_0_to_1               ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_green_leds                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router                 ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_002             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_003             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_005             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_026             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_028             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_040             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_id_router_042             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_irq_mapper                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_jtag_uart_0               ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_mutex_0                   ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_onchip_memory_0           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_onchip_memory_1           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_onchip_memory_2           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_onchip_shared             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_performance_counter_0     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_red_leds                  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_rsp_xbar_demux            ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_rsp_xbar_demux_002        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_rsp_xbar_demux_003        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_rsp_xbar_mux              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_rsp_xbar_mux_001          ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_switches                  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; Core3_timer_0_0                 ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; altera_avalon_sc_fifo           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; altera_merlin_master_agent      ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; altera_merlin_master_translator ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; altera_merlin_slave_agent       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; altera_merlin_slave_translator  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                    ; --            ; altera_reset_controller         ; --         ;
+; IP_TOOL_NAME                        ; Qsys                                                    ; --            ; --                              ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_addr_router               ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_addr_router_001           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_addr_router_002           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_addr_router_003           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_addr_router_004           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_addr_router_005           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                             ; --            ; Core3_cmd_xbar_demux            ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                             ; --            ; Core3_cmd_xbar_demux_001        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                               ; --            ; Core3_cmd_xbar_mux              ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                               ; --            ; Core3_cmd_xbar_mux_002          ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                               ; --            ; Core3_cmd_xbar_mux_005          ; --         ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                       ; --            ; Core3_cpu_0                     ; --         ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                       ; --            ; Core3_cpu_1                     ; --         ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                       ; --            ; Core3_cpu_2                     ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_fifo                                      ; --            ; Core3_fifo_0_to_1               ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                       ; --            ; Core3_green_leds                ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router                 ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_002             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_003             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_005             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_026             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_028             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_040             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                    ; --            ; Core3_id_router_042             ; --         ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                       ; --            ; Core3_irq_mapper                ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                 ; --            ; Core3_jtag_uart_0               ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_mutex                                     ; --            ; Core3_mutex_0                   ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                            ; --            ; Core3_onchip_memory_0           ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                            ; --            ; Core3_onchip_memory_1           ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                            ; --            ; Core3_onchip_memory_2           ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                            ; --            ; Core3_onchip_shared             ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_performance_counter                       ; --            ; Core3_performance_counter_0     ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                       ; --            ; Core3_red_leds                  ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                             ; --            ; Core3_rsp_xbar_demux            ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                             ; --            ; Core3_rsp_xbar_demux_002        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                             ; --            ; Core3_rsp_xbar_demux_003        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                               ; --            ; Core3_rsp_xbar_mux              ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                               ; --            ; Core3_rsp_xbar_mux_001          ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                       ; --            ; Core3_switches                  ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_timer                                     ; --            ; Core3_timer_0_0                 ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                   ; --            ; altera_avalon_sc_fifo           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_master_agent                              ; --            ; altera_merlin_master_agent      ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_master_translator                         ; --            ; altera_merlin_master_translator ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_agent                               ; --            ; altera_merlin_slave_agent       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_translator                          ; --            ; altera_merlin_slave_translator  ; --         ;
+; IP_TOOL_NAME                        ; altera_reset_controller                                 ; --            ; altera_reset_controller         ; --         ;
+; IP_TOOL_VERSION                     ; 13.0sp1                                                 ; --            ; --                              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_addr_router               ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_addr_router_001           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_addr_router_002           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_addr_router_003           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_addr_router_004           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_addr_router_005           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cmd_xbar_demux            ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cmd_xbar_demux_001        ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cmd_xbar_mux              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cmd_xbar_mux_002          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cmd_xbar_mux_005          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cpu_0                     ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cpu_1                     ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_cpu_2                     ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_fifo_0_to_1               ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_green_leds                ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router                 ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_002             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_003             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_005             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_026             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_028             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_040             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_id_router_042             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_irq_mapper                ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_jtag_uart_0               ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_mutex_0                   ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_onchip_memory_0           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_onchip_memory_1           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_onchip_memory_2           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_onchip_shared             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_performance_counter_0     ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_red_leds                  ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_rsp_xbar_demux            ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_rsp_xbar_demux_002        ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_rsp_xbar_demux_003        ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_rsp_xbar_mux              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; Core3_rsp_xbar_mux_001          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_switches                  ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                             ; --            ; Core3_timer_0_0                 ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; altera_avalon_sc_fifo           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; altera_merlin_master_agent      ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; altera_merlin_master_translator ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; altera_merlin_slave_agent       ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; altera_merlin_slave_translator  ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                    ; --            ; altera_reset_controller         ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                      ; --            ; --                              ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                       ; --            ; --                              ; --         ;
+; MISC_FILE                           ; Core3/synthesis/../../Core3.cmp                         ; --            ; --                              ; --         ;
+; MISC_FILE                           ; Core3/synthesis/../../Core3.qsys                        ; --            ; --                              ; --         ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                    ; --            ; --                              ; --         ;
+; PARTITION_COLOR                     ; 16764057                                                ; --            ; --                              ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                   ; --            ; --                              ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                  ; --            ; --                              ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                     ; --            ; --                              ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --                              ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                            ; --            ; --                              ; --         ;
+; SLD_INFO                            ; QSYS_NAME Core3 HAS_SOPCINFO 1 GENERATION_ID 1622162239 ; --            ; --                              ; --         ;
+; SOPCINFO_FILE                       ; Core3/synthesis/../../Core3.sopcinfo                    ; --            ; --                              ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                      ; --            ; --                              ; --         ;
++-------------------------------------+---------------------------------------------------------+---------------+---------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:11     ; 1.0                     ; 5080 MB             ; 00:01:10                           ;
+; Fitter                    ; 00:01:06     ; 1.7                     ; 5886 MB             ; 00:01:34                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4642 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.6                     ; 4919 MB             ; 00:00:10                           ;
+; Total                     ; 00:02:31     ; --                      ; --                  ; 00:03:00                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-GG83KMP  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-GG83KMP  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-GG83KMP  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-GG83KMP  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Core3 -c Core3
+quartus_fit --read_settings_files=off --write_settings_files=off Core3 -c Core3
+quartus_asm --read_settings_files=off --write_settings_files=off Core3 -c Core3
+quartus_sta Core3 -c Core3
+
+
+

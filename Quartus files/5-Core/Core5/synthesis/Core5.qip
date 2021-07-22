@@ -1,0 +1,302 @@
+set_global_assignment -entity "Core5" -library "Core5" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "Core5" -library "Core5" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "Core5" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "Core5" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../Core5.sopcinfo"]
+set_instance_assignment -entity "Core5" -library "Core5" -name SLD_INFO "QSYS_NAME Core5 HAS_SOPCINFO 1 GENERATION_ID 1622161378"
+set_global_assignment -library "Core5" -name MISC_FILE [file join $::quartus(qip_path) "../../Core5.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "Core5" -name MISC_FILE [file join $::quartus(qip_path) "../../Core5.qsys"]
+
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "Core5.v"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_irq_mapper.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_rsp_xbar_mux.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_rsp_xbar_demux_005.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_rsp_xbar_demux_002.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_rsp_xbar_demux.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cmd_xbar_mux_005.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cmd_xbar_mux_002.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cmd_xbar_mux.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cmd_xbar_demux.sv"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "Core5" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_102.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_100.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_080.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_078.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_058.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_056.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_036.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_034.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_005.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_003.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router_002.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_id_router.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_009.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_008.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_007.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_006.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_005.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_004.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_003.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_002.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router_001.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_addr_router.sv"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "Core5" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_performance_counter_0.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_4.hex"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_4.v"]
+set_global_assignment -library "Core5" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4.sdc"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_ociram_default_contents.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_oci_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_rf_ram_a.mif"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_rf_ram_b.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_4_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_3.hex"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_3.v"]
+set_global_assignment -library "Core5" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3.sdc"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_ociram_default_contents.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_oci_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_rf_ram_a.mif"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_rf_ram_b.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_3_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_2.hex"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_2.v"]
+set_global_assignment -library "Core5" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2.sdc"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_ociram_default_contents.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_oci_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_rf_ram_a.mif"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_rf_ram_b.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_2_test_bench.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_fifo_0_to_1.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_switches.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_green_leds.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_red_leds.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_shared.hex"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_shared.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_mutex_0.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_jtag_uart_0.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_timer_0_0.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_1.hex"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_1.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_0.hex"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_onchip_memory_0.v"]
+set_global_assignment -library "Core5" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1.sdc"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_ociram_default_contents.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_oci_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_rf_ram_a.mif"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_rf_ram_b.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_1_test_bench.v"]
+set_global_assignment -library "Core5" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0.sdc"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_ociram_default_contents.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_oci_test_bench.v"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_rf_ram_a.mif"]
+set_global_assignment -library "Core5" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_rf_ram_b.mif"]
+set_global_assignment -library "Core5" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core5_cpu_0_test_bench.v"]
+
+set_global_assignment -entity "Core5_irq_mapper" -library "Core5" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "Core5_irq_mapper" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_irq_mapper" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_rsp_xbar_mux_001" -library "Core5" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core5_rsp_xbar_mux_001" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_rsp_xbar_mux_001" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_rsp_xbar_mux" -library "Core5" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core5_rsp_xbar_mux" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_rsp_xbar_mux" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_rsp_xbar_demux_005" -library "Core5" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core5_rsp_xbar_demux_005" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_rsp_xbar_demux_005" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_rsp_xbar_demux_003" -library "Core5" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core5_rsp_xbar_demux_003" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_rsp_xbar_demux_003" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_rsp_xbar_demux_002" -library "Core5" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core5_rsp_xbar_demux_002" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_rsp_xbar_demux_002" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_rsp_xbar_demux" -library "Core5" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core5_rsp_xbar_demux" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_rsp_xbar_demux" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cmd_xbar_mux_005" -library "Core5" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core5_cmd_xbar_mux_005" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cmd_xbar_mux_005" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cmd_xbar_mux_002" -library "Core5" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core5_cmd_xbar_mux_002" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cmd_xbar_mux_002" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cmd_xbar_mux" -library "Core5" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core5_cmd_xbar_mux" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cmd_xbar_mux" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cmd_xbar_demux_001" -library "Core5" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core5_cmd_xbar_demux_001" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cmd_xbar_demux_001" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cmd_xbar_demux" -library "Core5" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core5_cmd_xbar_demux" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cmd_xbar_demux" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "Core5" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_102" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_102" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_102" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_100" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_100" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_100" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_080" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_080" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_080" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_078" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_078" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_078" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_058" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_058" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_058" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_056" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_056" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_056" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_036" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_036" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_036" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_034" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_034" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_034" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_005" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_005" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_005" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_003" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_003" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_003" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router_002" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router_002" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router_002" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_id_router" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_id_router" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_id_router" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_009" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_009" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_009" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_008" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_008" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_008" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_007" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_007" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_007" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_006" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_006" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_006" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_005" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_005" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_005" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_004" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_004" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_004" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_003" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_003" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_003" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_002" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_002" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_002" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router_001" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router_001" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router_001" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_addr_router" -library "Core5" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core5_addr_router" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_addr_router" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core5" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core5" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core5" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core5" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core5" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_performance_counter_0" -library "Core5" -name IP_TOOL_NAME "altera_avalon_performance_counter"
+set_global_assignment -entity "Core5_performance_counter_0" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_performance_counter_0" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_onchip_memory_4" -library "Core5" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core5_onchip_memory_4" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_onchip_memory_4" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cpu_4" -library "Core5" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core5_cpu_4" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cpu_4" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_onchip_memory_3" -library "Core5" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core5_onchip_memory_3" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_onchip_memory_3" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cpu_3" -library "Core5" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core5_cpu_3" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cpu_3" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_onchip_memory_2" -library "Core5" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core5_onchip_memory_2" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_onchip_memory_2" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cpu_2" -library "Core5" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core5_cpu_2" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cpu_2" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_fifo_0_to_1" -library "Core5" -name IP_TOOL_NAME "altera_avalon_fifo"
+set_global_assignment -entity "Core5_fifo_0_to_1" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_fifo_0_to_1" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_switches" -library "Core5" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core5_switches" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_switches" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_green_leds" -library "Core5" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core5_green_leds" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_green_leds" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_red_leds" -library "Core5" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core5_red_leds" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_red_leds" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_onchip_shared" -library "Core5" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core5_onchip_shared" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_onchip_shared" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_mutex_0" -library "Core5" -name IP_TOOL_NAME "altera_avalon_mutex"
+set_global_assignment -entity "Core5_mutex_0" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_mutex_0" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_jtag_uart_0" -library "Core5" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "Core5_jtag_uart_0" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_jtag_uart_0" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_timer_0_0" -library "Core5" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "Core5_timer_0_0" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_timer_0_0" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_onchip_memory_1" -library "Core5" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core5_onchip_memory_1" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_onchip_memory_1" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_onchip_memory_0" -library "Core5" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core5_onchip_memory_0" -library "Core5" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core5_onchip_memory_0" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cpu_1" -library "Core5" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core5_cpu_1" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cpu_1" -library "Core5" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core5_cpu_0" -library "Core5" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core5_cpu_0" -library "Core5" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core5_cpu_0" -library "Core5" -name IP_TOOL_ENV "Qsys"

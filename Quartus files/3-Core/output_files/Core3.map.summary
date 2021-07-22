@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri May 28 02:39:34 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : Core3
+Top-level Entity Name : Core3
+Family : Cyclone IV E
+Total logic elements : 14,961
+    Total combinational functions : 13,467
+    Dedicated logic registers : 7,891
+Total registers : 7891
+Total pins : 46
+Total virtual pins : 0
+Total memory bits : 1,347,584
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

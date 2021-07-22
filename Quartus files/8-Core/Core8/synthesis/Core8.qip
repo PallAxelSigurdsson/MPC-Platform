@@ -1,0 +1,404 @@
+set_global_assignment -entity "Core8" -library "Core8" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "Core8" -library "Core8" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "Core8" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "Core8" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../Core8.sopcinfo"]
+set_instance_assignment -entity "Core8" -library "Core8" -name SLD_INFO "QSYS_NAME Core8 HAS_SOPCINFO 1 GENERATION_ID 1623941908"
+set_global_assignment -library "Core8" -name MISC_FILE [file join $::quartus(qip_path) "../../Core8.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "Core8" -name MISC_FILE [file join $::quartus(qip_path) "../../Core8.qsys"]
+
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "Core8.v"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_irq_mapper.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_rsp_xbar_mux.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_rsp_xbar_demux_005.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_rsp_xbar_demux_002.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_rsp_xbar_demux.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cmd_xbar_mux_005.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cmd_xbar_mux_002.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cmd_xbar_mux.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cmd_xbar_demux.sv"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_252.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_250.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_218.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_216.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_184.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_182.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_150.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_148.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_116.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_114.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_082.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_080.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_048.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_046.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_005.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_003.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router_002.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_id_router.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_015.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_014.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_013.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_012.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_011.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_010.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_009.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_008.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_007.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_006.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_005.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_004.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_003.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_002.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router_001.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_addr_router.sv"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "Core8" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_performance_counter_0.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_7.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_7.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_7_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_6.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_6.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_6_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_5.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_5.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_5_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_4.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_4.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_4_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_3.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_3.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_3_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_2.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_2.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_2_test_bench.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_fifo_0_to_1.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_switches.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_green_leds.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_red_leds.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_shared.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_shared.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_mutex_0.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_jtag_uart_0.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_timer_0_0.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_1.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_1.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_0.hex"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_onchip_memory_0.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_1_test_bench.v"]
+set_global_assignment -library "Core8" -name SDC_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0.sdc"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_jtag_debug_module_tck.v"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_ociram_default_contents.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_oci_test_bench.v"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_rf_ram_a.mif"]
+set_global_assignment -library "Core8" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_rf_ram_b.mif"]
+set_global_assignment -library "Core8" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Core8_cpu_0_test_bench.v"]
+
+set_global_assignment -entity "Core8_irq_mapper" -library "Core8" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "Core8_irq_mapper" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_irq_mapper" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_rsp_xbar_mux_001" -library "Core8" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core8_rsp_xbar_mux_001" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_rsp_xbar_mux_001" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_rsp_xbar_mux" -library "Core8" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core8_rsp_xbar_mux" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_rsp_xbar_mux" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_rsp_xbar_demux_005" -library "Core8" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core8_rsp_xbar_demux_005" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_rsp_xbar_demux_005" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_rsp_xbar_demux_003" -library "Core8" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core8_rsp_xbar_demux_003" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_rsp_xbar_demux_003" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_rsp_xbar_demux_002" -library "Core8" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core8_rsp_xbar_demux_002" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_rsp_xbar_demux_002" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_rsp_xbar_demux" -library "Core8" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core8_rsp_xbar_demux" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_rsp_xbar_demux" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cmd_xbar_mux_005" -library "Core8" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core8_cmd_xbar_mux_005" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cmd_xbar_mux_005" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cmd_xbar_mux_002" -library "Core8" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core8_cmd_xbar_mux_002" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cmd_xbar_mux_002" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cmd_xbar_mux" -library "Core8" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "Core8_cmd_xbar_mux" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cmd_xbar_mux" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cmd_xbar_demux_001" -library "Core8" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core8_cmd_xbar_demux_001" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cmd_xbar_demux_001" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cmd_xbar_demux" -library "Core8" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "Core8_cmd_xbar_demux" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cmd_xbar_demux" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "Core8" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_252" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_252" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_252" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_250" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_250" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_250" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_218" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_218" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_218" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_216" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_216" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_216" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_184" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_184" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_184" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_182" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_182" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_182" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_150" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_150" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_150" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_148" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_148" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_148" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_116" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_116" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_116" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_114" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_114" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_114" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_082" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_082" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_082" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_080" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_080" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_080" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_048" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_048" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_048" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_046" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_046" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_046" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_005" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_005" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_005" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_003" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_003" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_003" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router_002" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router_002" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router_002" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_id_router" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_id_router" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_id_router" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_015" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_015" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_015" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_014" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_014" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_014" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_013" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_013" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_013" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_012" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_012" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_012" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_011" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_011" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_011" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_010" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_010" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_010" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_009" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_009" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_009" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_008" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_008" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_008" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_007" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_007" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_007" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_006" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_006" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_006" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_005" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_005" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_005" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_004" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_004" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_004" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_003" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_003" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_003" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_002" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_002" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_002" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router_001" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router_001" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router_001" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_addr_router" -library "Core8" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "Core8_addr_router" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_addr_router" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core8" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core8" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core8" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core8" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core8" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_performance_counter_0" -library "Core8" -name IP_TOOL_NAME "altera_avalon_performance_counter"
+set_global_assignment -entity "Core8_performance_counter_0" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_performance_counter_0" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_7" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_7" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_7" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_7" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_7" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_7" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_6" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_6" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_6" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_6" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_6" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_6" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_5" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_5" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_5" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_5" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_5" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_5" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_4" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_4" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_4" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_4" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_4" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_4" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_3" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_3" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_3" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_3" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_3" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_3" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_2" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_2" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_2" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_2" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_2" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_2" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_fifo_0_to_1" -library "Core8" -name IP_TOOL_NAME "altera_avalon_fifo"
+set_global_assignment -entity "Core8_fifo_0_to_1" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_fifo_0_to_1" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_switches" -library "Core8" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core8_switches" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_switches" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_green_leds" -library "Core8" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core8_green_leds" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_green_leds" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_red_leds" -library "Core8" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "Core8_red_leds" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_red_leds" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_shared" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_shared" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_shared" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_mutex_0" -library "Core8" -name IP_TOOL_NAME "altera_avalon_mutex"
+set_global_assignment -entity "Core8_mutex_0" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_mutex_0" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_jtag_uart_0" -library "Core8" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "Core8_jtag_uart_0" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_jtag_uart_0" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_timer_0_0" -library "Core8" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "Core8_timer_0_0" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_timer_0_0" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_1" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_1" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_1" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_onchip_memory_0" -library "Core8" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "Core8_onchip_memory_0" -library "Core8" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "Core8_onchip_memory_0" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_1" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_1" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_1" -library "Core8" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "Core8_cpu_0" -library "Core8" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "Core8_cpu_0" -library "Core8" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "Core8_cpu_0" -library "Core8" -name IP_TOOL_ENV "Qsys"

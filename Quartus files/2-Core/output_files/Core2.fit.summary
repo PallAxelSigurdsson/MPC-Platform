@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri May 28 02:44:09 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : Core2
+Top-level Entity Name : Core2
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 9,089 / 114,480 ( 8 % )
+    Total combinational functions : 8,727 / 114,480 ( 8 % )
+    Dedicated logic registers : 5,197 / 114,480 ( 5 % )
+Total registers : 5197
+Total pins : 46 / 529 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 1,072,128 / 3,981,312 ( 27 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
