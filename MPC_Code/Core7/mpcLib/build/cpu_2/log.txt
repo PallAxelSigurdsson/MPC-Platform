@@ -1,0 +1,60 @@
+Info: Building ../../../bsp/cpu_2
+make --no-print-directory -C ../../../bsp/cpu_2
+[BSP build complete]
+Info: Compiling ../../src/MPC.c to obj/default/MPC.o
+nios2-elf-gcc -xc -MP -MMD -c -I../../inc -I../../../bsp/cpu_2/HAL/inc -I../../../bsp/cpu_2 -I../../../bsp/cpu_2/drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/MPC.o ../../src/MPC.c
+../../src/MPC.c:371: warning: excess elements in array initializer
+../../src/MPC.c:371: warning: (near initialization for 'fifoInDepths[0]')
+../../src/MPC.c:382: warning: excess elements in array initializer
+../../src/MPC.c:382: warning: (near initialization for 'fifoInDepths[1]')
+../../src/MPC.c:393: warning: excess elements in array initializer
+../../src/MPC.c:393: warning: (near initialization for 'fifoInDepths[2]')
+../../src/MPC.c:404: warning: excess elements in array initializer
+../../src/MPC.c:404: warning: (near initialization for 'fifoInDepths[3]')
+../../src/MPC.c:415: warning: excess elements in array initializer
+../../src/MPC.c:415: warning: (near initialization for 'fifoInDepths[4]')
+../../src/MPC.c:426: warning: excess elements in array initializer
+../../src/MPC.c:426: warning: (near initialization for 'fifoInDepths[5]')
+../../src/MPC.c:437: warning: excess elements in array initializer
+../../src/MPC.c:437: warning: (near initialization for 'fifoInDepths[6]')
+../../src/MPC.c: In function 'MPC_shared_memory_write':
+../../src/MPC.c:758: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_shared_memory_read':
+../../src/MPC.c:764: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_sys_timer_reset':
+../../src/MPC.c:775: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:776: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:777: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_sys_timestamp':
+../../src/MPC.c:793: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:794: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_sys_timer_period':
+../../src/MPC.c:808: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:809: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:810: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_local_timestamp_reset':
+../../src/MPC.c:823: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:824: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:825: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_local_timestamp':
+../../src/MPC.c:841: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:842: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_shared_timestamp_0_reset':
+../../src/MPC.c:857: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:858: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:859: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_shared_timestamp_0':
+../../src/MPC.c:875: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:876: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_shared_timestamp_1_reset':
+../../src/MPC.c:891: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:892: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:893: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c: In function 'MPC_shared_timestamp_1':
+../../src/MPC.c:909: warning: initialization makes pointer from integer without a cast
+../../src/MPC.c:910: warning: initialization makes pointer from integer without a cast
+Info: Archiving obj/default/libMPC.a
+rm -f -f obj/default/libMPC.a
+mkdir -p obj/default
+nios2-elf-ar  -src obj/default/libMPC.a obj/default/MPC.o
+cp -f obj/default/libMPC.a libMPC.a

@@ -1,0 +1,550 @@
+/* DESCRIPTION:
+ * This code measures and reports the latencies of all functions 
+ * relating to the local timer peripherals.
+ */
+#include "system.h"
+#include "MPC.h"			// The library holding all MPC OS commands.
+#include "INFO.h"			// Information about the whole multicore system (central system.h)
+#include <sys/alt_irq.h>
+#include "altera_avalon_timer_regs.h"
+#include "altera_avalon_performance_counter.h"
+
+alt_u32 CPU_NUMBER		= CPU_4;
+alt_u32 READ_DATA		= 0;
+alt_u32 PERIOD			= 0xFFFF;
+
+alt_u32 INDEX 			= 0;
+alt_u32 TIMER			= 0;
+alt_u32 ITERATIONS		= 10000;
+
+alt_u32 TIMER_MIN		= 1000000;
+alt_u32 TIMER_MAX		= 0;
+
+alt_u32 MEASURED_MIN	= 1000000;
+alt_u32 MEASURED_MAX	= 0;
+
+alt_u32 PERF_OVERHEAD	= 16;
+
+int main()
+{
+	printf("\033c");
+	printf("CORE %u\n",CPU_4);
+
+	printf("\n\n-------- LOCAL SYSTEM TIMER RESET --------\n\n");
+
+	alt_irq_context CONTEXT;
+
+	printf("\nLocal System Timer Reset - Immediate CPU_ID\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_sys_timer_reset(4);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER RESET MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER RESET MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+	printf("\nLocal System Timer Reset - alt_u32 CPU_ID\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_sys_timer_reset(CPU_NUMBER);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER RESET MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER RESET MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+
+
+	printf("\n\n-------- LOCAL SYSTEM TIMER TIMESTAMP --------\n\n");
+
+	printf("\nLocal System Timer Timestamp - Immediate CPU_ID - alt_u32 Storage\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		READ_DATA = MPC_sys_timestamp(4);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER TIMESTAMP MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER TIMESTAMP MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+	printf("\nLocal System Timer Timestamp - alt_u32 CPU_ID - alt_u32 Storage\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		READ_DATA = MPC_sys_timestamp(CPU_NUMBER);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER TIMESTAMP MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER TIMESTAMP MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+
+
+
+
+printf("\n\n-------- LOCAL SYSTEM TIMER PERIOD --------\n\n");
+
+	printf("\nLocal System Timer Period - Immediate CPU_ID - Immediate Period\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_sys_timer_period(4, 0xFFFF);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER PERIOD MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER PERIOD MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+	
+printf("\nLocal System Timer Period - alt_u32 CPU_ID - Immediate Period\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_sys_timer_period(CPU_NUMBER, 0xFFFF);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER PERIOD MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER PERIOD MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+printf("\nLocal System Timer Period - Immediate CPU_ID - alt_u32 Period\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_sys_timer_period(4, PERIOD);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER PERIOD MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER PERIOD MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+printf("\nLocal System Timer Period - alt_u32 CPU_ID - alt_u32 Period\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_sys_timer_period(CPU_NUMBER, PERIOD);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("SYSTEM TIMER PERIOD MIN: %u\n",TIMER_MIN);
+	printf("SYSTEM TIMER PERIOD MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+
+
+
+	printf("\n\n-------- LOCAL TIMESTAMP RESET --------\n\n");
+
+	printf("\nLocal Timestamp Reset - Immediate CPU_ID\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_local_timestamp_reset(4);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("TIMESTAMP RESET MIN: %u\n",TIMER_MIN);
+	printf("TIMESTAMP RESET MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+	printf("\nLocal Timestamp Reset - alt_u32 CPU_ID\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		MPC_local_timestamp_reset(CPU_NUMBER);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("TIMESTAMP RESET MIN: %u\n",TIMER_MIN);
+	printf("TIMESTAMP RESET MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+
+
+	printf("\n\n-------- LOCAL TIMESTAMP --------\n\n");
+
+	printf("\nLocal Timestamp - Immediate CPU_ID - alt_u32 Storage\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		READ_DATA = MPC_local_timestamp(4);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("TIMESTAMP TIMESTAMP MIN: %u\n",TIMER_MIN);
+	printf("TIMESTAMP TIMESTAMP MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+	printf("\nLocal Timestamp - alt_u32 CPU_ID - alt_u32 Storage\n\n");
+
+	CONTEXT = alt_irq_disable_all();
+
+	for(INDEX = 0; INDEX < ITERATIONS; INDEX++){
+
+		PERF_RESET(PERFORMANCE_COUNTER_4_BASE);
+
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_4_BASE);	
+		PERF_BEGIN(PERFORMANCE_COUNTER_4_BASE,1);
+
+		READ_DATA = MPC_local_timestamp(CPU_NUMBER);
+
+		PERF_END(PERFORMANCE_COUNTER_4_BASE,1);	
+		PERF_STOP_MEASURING(PERFORMANCE_COUNTER_4_BASE);
+
+		TIMER = perf_get_section_time(PERFORMANCE_COUNTER_4_BASE, 1)-PERF_OVERHEAD;
+
+		if(TIMER < TIMER_MIN){
+			TIMER_MIN = TIMER;
+		}
+		if(TIMER > TIMER_MAX){
+			TIMER_MAX = TIMER;
+		}
+	}
+	
+	if(TIMER_MIN < MEASURED_MIN){
+		MEASURED_MIN = TIMER_MIN;
+		}
+	if(TIMER_MAX > MEASURED_MAX){
+		MEASURED_MAX = TIMER_MAX;
+		}
+
+	alt_irq_enable_all(CONTEXT);
+
+	printf("TIMESTAMP TIMESTAMP MIN: %u\n",TIMER_MIN);
+	printf("TIMESTAMP TIMESTAMP MAX: %u\n",TIMER_MAX);
+
+	TIMER_MIN = 1000000;
+	TIMER_MAX = 0;
+
+	return 0;
+}

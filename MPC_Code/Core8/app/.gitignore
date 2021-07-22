@@ -1,0 +1,4 @@
+Makefile.conf
+*.d
+*.o
+*log.txt
